@@ -22,8 +22,8 @@ effective date in the same change.
 
 ## Deploy option B: GitHub Pages (free) with Namecheap DNS
 
-1. Create a public repo `adamdoherty.com` on your personal GitHub account, then push:
-   `git remote add origin https://github.com/<you>/adamdoherty.com.git && git push -u origin main`
+1. Repo: `adamdoherty-arc/adamdoherty` (public), remote `git@github-ada:adamdoherty-arc/adamdoherty.git`
+   (the `github-ada` SSH alias uses `~/.ssh/github_adamdoherty_arc`). `git push` publishes.
 2. Repo Settings, Pages: Source "Deploy from a branch", branch `main`, folder `/ (root)`. The custom domain
    reads `adamdoherty.com` from `CNAME`.
 3. Namecheap, Domain List, adamdoherty.com, Manage, Advanced DNS. Remove the URL Redirect / parking records, then add:
@@ -31,7 +31,7 @@ effective date in the same change.
    - A `@` 185.199.109.153
    - A `@` 185.199.110.153
    - A `@` 185.199.111.153
-   - CNAME `www` `<you>.github.io.`
+   - CNAME `www` `adamdoherty-arc.github.io.`
 4. When the Pages settings show the DNS check passing, tick "Enforce HTTPS".
 
 ## After either deploy: Google
