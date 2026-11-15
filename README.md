@@ -13,7 +13,7 @@ effective date in the same change.
 
 ## Deploy option A: Namecheap Stellar hosting (cPanel)
 
-1. Build the upload: `powershell -NoProfile -Command "Compress-Archive -Path index.html,privacy.html,terms.html,style.css,.htaccess -DestinationPath dist/adamdoherty-site.zip -Force"`
+1. Build the upload: `powershell -NoProfile -Command "Compress-Archive -Path index.html,privacy.html,terms.html,style.css,favicon.png,img,.htaccess -DestinationPath dist/adamdoherty-site.zip -Force"`
 2. Namecheap, Hosting List, cPanel, File Manager, `public_html`: upload `dist/adamdoherty-site.zip`, Extract, then
    delete the zip. Turn on "Show Hidden Files" to confirm `.htaccess` is there.
 3. Namecheap, Domain List, adamdoherty.com, Manage: Nameservers "Namecheap Web Hosting DNS" (or Advanced DNS
